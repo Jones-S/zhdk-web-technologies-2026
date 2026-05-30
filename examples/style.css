@@ -1,0 +1,22 @@
+/* This file is linked from 11-link-css-js.html */
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #1db954;
+}
+
+#message {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
