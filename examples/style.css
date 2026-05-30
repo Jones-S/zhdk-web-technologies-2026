@@ -1,5 +1,3 @@
-/* This file is linked from 11-link-css-js.html */
-
 body {
   font-family: sans-serif;
   padding: 2rem;
@@ -10,12 +8,12 @@ h1 {
   color: #1db954;
 }
 
-#message {
+.msg {
   font-size: 1.2rem;
   color: #333;
 }
 
-button {
+.btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;

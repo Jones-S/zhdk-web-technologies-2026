@@ -1,0 +1,174 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #ebebeb;
+  color: #2d2d2d;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ── Nav ── */
+nav {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 52px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-logo {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.nav-icon {
+  color: #555;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* ── Article wrapper ── */
+article {
+  max-width: 780px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+/* ── Header ── */
+.article-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.article-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin-bottom: 1.1rem;
+}
+
+.byline {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+}
+
+.byline a {
+  color: #5ba4a4;
+  text-decoration: none;
+}
+
+.byline a:hover {
+  text-decoration: underline;
+}
+
+/* ── Intro paragraph with drop cap ── */
+.intro {
+  font-size: 1.05rem;
+  margin-bottom: 3.5rem;
+}
+
+.intro::first-letter {
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 0.8;
+  float: left;
+  margin-right: 0.08em;
+  margin-top: 0.05em;
+  color: #1a1a1a;
+}
+
+/* ── Section heading ── */
+.section-heading {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+/* ── Map card ── */
+.map-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0 2rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.map-card:last-child {
+  border-bottom: none;
+}
+
+/* Number badge — spans both columns on its own row */
+.card-number {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #f5d000;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+/* Text column */
+.card-text {
+  grid-column: 1;
+}
+
+.card-text h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin-bottom: 0.6rem;
+  color: #1a1a1a;
+}
+
+.card-text p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #333;
+}
+
+/* Image column */
+.card-image {
+  grid-column: 2;
+}
+
+.card-image img {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.card-image figcaption {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  color: #444;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.card-image .credit {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72rem;
+  color: #888;
+  text-align: right;
+  margin-top: 0.2rem;
+}
