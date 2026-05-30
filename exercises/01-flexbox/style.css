@@ -39,7 +39,6 @@
 
 ============================================================ */
 
-
 /* --- Base styles (already done for you) --- */
 
 * {
@@ -54,7 +53,6 @@ body {
   color: #222;
 }
 
-
 /* ── Nav ─────────────────────────────────────────────────── */
 
 nav {
@@ -63,8 +61,8 @@ nav {
   height: 56px;
   border-bottom: 2px solid #e0e0e0;
 
-  display: flex;                  /* TODO 1 */
-  align-items: center;            /* TODO 2 */
+  display: flex; /* TODO 1 */
+  align-items: center; /* TODO 2 */
   justify-content: space-between; /* TODO 3 */
 }
 
@@ -75,7 +73,7 @@ nav {
 
 .nav-links {
   display: flex; /* TODO 4 */
-  gap: 1.5rem;   /* TODO 4 */
+  gap: 1.5rem; /* TODO 4 */
   list-style: none;
 }
 
@@ -84,14 +82,13 @@ nav {
   color: #444;
 }
 
-
 /* ── Card row ────────────────────────────────────────────── */
 
 .card-row {
   padding: 2rem;
 
   display: flex; /* TODO 5 */
-  gap: 1.5rem;   /* TODO 6 */
+  gap: 1.5rem; /* TODO 6 */
 }
 
 .card {
@@ -100,8 +97,8 @@ nav {
   padding: 1.5rem;
   border: 1px solid #ddd;
 
-  flex: 1;             /* TODO 7 */
-  display: flex;       /* TODO 8 */
+  flex: 1; /* TODO 7 */
+  display: flex; /* TODO 8 */
   flex-direction: column; /* TODO 8 */
 }
 
@@ -123,6 +120,5 @@ nav {
 }
 
 .card-rating {
-  margin-top: auto; /* TODO 9 */
   font-size: 1.1rem;
 }
