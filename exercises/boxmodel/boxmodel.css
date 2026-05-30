@@ -6,7 +6,7 @@ body {
 .card {
   background-color: white;
   width: 400px;
-  /* the card is stuck to the top-left corner of the page */
+  margin: 1rem auto;
 }
 
 img {
@@ -14,25 +14,20 @@ img {
 }
 
 .card-body {
-  /* all text sits flush against the edge of the card */
+  padding: 1rem;
 }
 
 .tag {
   background-color: #2a7a2a;
   color: white;
-  /* the text is touching the edges of the green label */
+  padding: 0.25rem 0.5rem 0.18rem;
 }
 
 h2 {
   font-size: 1.2rem;
-  /* there is too much space above the heading */
+  margin-top: 0.5rem;
 }
 
 p {
-  margin-bottom: 0;
-  /* the link below feels too close to the paragraph */
-}
-
-.card {
-  /* the card has no visual separation from other elements below it */
+  margin-bottom: 1rem;
 }
