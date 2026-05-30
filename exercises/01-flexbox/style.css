@@ -63,14 +63,9 @@ nav {
   height: 56px;
   border-bottom: 2px solid #e0e0e0;
 
-  /* TODO 1: turn nav into a flex container */
-  display: /* ??? */;
-
-  /* TODO 2: center items vertically */
-  align-items: /* ??? */;
-
-  /* TODO 3: push .nav-links to the right side */
-  justify-content: /* ??? */;
+  display: flex;                  /* TODO 1 */
+  align-items: center;            /* TODO 2 */
+  justify-content: space-between; /* TODO 3 */
 }
 
 .nav-logo {
@@ -79,9 +74,8 @@ nav {
 }
 
 .nav-links {
-  /* TODO 4: make the links sit in a row with some space between them */
-  display: /* ??? */;
-  gap: /* ??? */;
+  display: flex; /* TODO 4 */
+  gap: 1.5rem;   /* TODO 4 */
   list-style: none;
 }
 
@@ -96,11 +90,8 @@ nav {
 .card-row {
   padding: 2rem;
 
-  /* TODO 5: turn .card-row into a flex container */
-  display: /* ??? */;
-
-  /* TODO 6: add space between the cards */
-  gap: /* ??? */;
+  display: flex; /* TODO 5 */
+  gap: 1.5rem;   /* TODO 6 */
 }
 
 .card {
@@ -109,13 +100,9 @@ nav {
   padding: 1.5rem;
   border: 1px solid #ddd;
 
-  /* TODO 7: make every card share the width equally (1 unit each) */
-  flex: /* ??? */;
-
-  /* TODO 8: turn the card itself into a flex container
-             so we can push the rating to the bottom */
-  display: /* ??? */;
-  flex-direction: /* ??? */;
+  flex: 1;             /* TODO 7 */
+  display: flex;       /* TODO 8 */
+  flex-direction: column; /* TODO 8 */
 }
 
 .card-emoji {
@@ -136,8 +123,6 @@ nav {
 }
 
 .card-rating {
-  /* TODO 9: push the rating to the very bottom of the card
-             HINT: margin-top: auto works inside a flex column */
-  margin-top: /* ??? */;
+  margin-top: auto; /* TODO 9 */
   font-size: 1.1rem;
 }
