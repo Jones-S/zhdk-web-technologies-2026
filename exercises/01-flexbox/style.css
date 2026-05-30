@@ -39,9 +39,6 @@
 
 ============================================================ */
 
-
-/* --- Base styles (already done for you) --- */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -53,7 +50,6 @@ body {
   background-color: #f5f5f5;
   color: #222;
 }
-
 
 /* ── Nav ─────────────────────────────────────────────────── */
 
@@ -89,7 +85,6 @@ nav {
   text-decoration: none;
   color: #444;
 }
-
 
 /* ── Card row ────────────────────────────────────────────── */
 
@@ -136,8 +131,5 @@ nav {
 }
 
 .card-rating {
-  /* TODO 9: push the rating to the very bottom of the card
-             HINT: margin-top: auto works inside a flex column */
-  margin-top: /* ??? */;
   font-size: 1.1rem;
 }
