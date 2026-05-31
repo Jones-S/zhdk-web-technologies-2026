@@ -1,21 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <title>Exercise — Fetch API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f5f0e8;
+      color: #1a1008;
+      font-family: 'Source Serif 4', serif;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+      color: #1a1008;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1rem;
+      color: #7a5c3a;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+
+    .search-row {
+      display: flex;
+      gap: 0;
+      border: 2px solid #1a1008;
+      margin-bottom: 2.5rem;
+      background: #fff;
+    }
+
+    #search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 0.85rem 1rem;
+      font-family: 'Source Serif 4', serif;
+      font-size: 1rem;
+      background: transparent;
+      color: #1a1008;
+    }
+
+    #search-input::placeholder { color: #b09878; font-style: italic; }
+
+    #search-btn {
+      border: none;
+      border-left: 2px solid #1a1008;
+      background: #1a1008;
+      color: #f5f0e8;
+      padding: 0.85rem 1.4rem;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    #search-btn:hover { background: #7a5c3a; }
+
+    #results { list-style: none; }
+
+    #results li {
+      padding: 1rem 0;
+      border-bottom: 1px solid #d9cdb8;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      animation: fadeUp 0.25s ease both;
+    }
+
+    #results li:last-child { border-bottom: none; }
+
+    .book-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: #1a1008;
+    }
+
+    .book-author {
+      font-size: 0.875rem;
+      font-style: italic;
+      color: #7a5c3a;
+    }
+
+    .loading, .error, .no-results {
+      font-style: italic;
+      color: #7a5c3a;
+      padding: 1.5rem 0;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
   <script src="script.js" defer></script>
 </head>
-
 <body>
-
-  <h1>Book Search</h1>
-
-  <input type="text" id="search-input" placeholder="Search for a book..." />
-  <button id="search-btn">Search</button>
-
-  <ul id="results"></ul>
-
+  <div class="container">
+    <h1>Book Search</h1>
+    <p class="subtitle">Search the Open Library catalogue</p>
+    <div class="search-row">
+      <input type="text" id="search-input" placeholder="Search for a title or author…" />
+      <button id="search-btn">Search</button>
+    </div>
+    <ul id="results"></ul>
+  </div>
 </body>
-
 </html>
