@@ -24,7 +24,7 @@ console.log(/* ??? */);
 // TODO 2: log just the title
 console.log(/* ??? */);
 
-// TODO 3: log the author's name (it's nested inside author)
+// TODO 3: log the author's name
 console.log(/* ??? */);
 
 // TODO 4: log how many ingredients the recipe has
