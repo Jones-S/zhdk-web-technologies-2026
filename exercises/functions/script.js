@@ -25,3 +25,54 @@ formatPrice(4.5, "EUR"); // → EUR 4.50
 //         EXAMPLE: discount(100, 20) → "Price after discount: CHF 80.00"
 
 // TODO 3: call discount() with two different examples
+
+
+// ── Return values ────────────────────────────────────────────
+//
+// So far all functions just log something — they don't produce a value
+// you can use elsewhere. A function with "return" hands a value back
+// to whoever called it.
+//
+// EXAMPLE:
+//   function double(n) {
+//     return n * 2;
+//   }
+//   const result = double(5); // result is now 10
+//   console.log(result);      // → 10
+//
+// ─────────────────────────────────────────────────────────────
+
+// TODO 4: rewrite formatPrice so it RETURNS the formatted string
+//         instead of logging it directly.
+//         HINT: replace console.log(...) with return ...
+//         Then call it and log the returned value yourself:
+//         console.log(formatPrice(9.9, 'CHF'));
+function formatPrice(amount, currency) {
+  /* ??? */
+}
+
+
+// ── Calling a function inside another function ───────────────
+//
+// Functions can call other functions. This lets you build
+// bigger things out of smaller, reusable pieces.
+//
+// ─────────────────────────────────────────────────────────────
+
+const cart = [
+  { name: 'Tomatoes',  price: 2.5 },
+  { name: 'Bread',     price: 4.2 },
+  { name: 'Olive Oil', price: 8.9 },
+];
+
+// TODO 5: define a function called printCart
+//         it takes the cart array as a parameter
+//         it should loop over the items and for each one
+//         call formatPrice() (from TODO 4) and log the result
+//         together with the item name.
+//         EXAMPLE output:
+//           Tomatoes — CHF 2.50
+//           Bread — CHF 4.20
+//           Olive Oil — CHF 8.90
+
+// TODO 6: call printCart with the cart array
