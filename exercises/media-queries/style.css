@@ -11,7 +11,6 @@
 
    TO TEST
    -------
-   Open Chrome DevTools → toggle device toolbar (Ctrl/Cmd + Shift + M)
    Resize the viewport and watch your layout change.
 
 ============================================================ */
@@ -79,13 +78,11 @@ main {
    - switch the card grid to 2 columns
 */
 
-
 /* ── TODO 5: Desktop ─────────────────────────────────────────
    When the screen is at least 1024px wide:
    - switch the card grid to 3 columns
    - limit the page to a max-width of 1100px and center it
 */
-
 
 /* ── TODO 6: Orientation ─────────────────────────────────────
    Write a media query that detects screen orientation.
