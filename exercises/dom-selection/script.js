@@ -2,6 +2,8 @@
 // EXERCISE: Selecting Elements in the DOM
 // ============================================================
 //
+// https://javascript.info/searching-elements-dom
+//
 // Open the browser console to see your results.
 // (Right-click the page → Inspect → Console)
 //
